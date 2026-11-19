@@ -71,7 +71,7 @@
       <item>
        <widget class="QLabel" name="tvPalabras">
         <property name="text">
-         <string>0l</string>
+         <string>0</string>
         </property>
        </widget>
       </item>
