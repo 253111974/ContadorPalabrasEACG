@@ -16,7 +16,15 @@ class ContadorPalabras(QtWidgets.QMainWindow):
         print(textoSeparado)
         # contar las palabras
         cantidadPalabras = len(textoSeparado)
-        print ("cantidad de palabras: ", cantidadPalabras)
+        self.tvPalabras.setText(f"{cantidadPalabras}")
+        # contar caracteres
+        # cantidadCaracteres = len(texto)
+        # self.tvCaracteres.setText(f"{cantidadCaracteres}")
+        totalCaracteres = 0
+        for palabra in textoSeparado:
+            totalCaracteres += len(palabra)
+        totalCaracteres
+        self.tvCaracteres.setText(f"{totalCaracteres}")
 
 app = QtWidgets.QApplication(sys.argv)
 ventana = ContadorPalabras()
